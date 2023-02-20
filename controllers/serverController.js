@@ -6,7 +6,7 @@ const app = express();
 var urlencodedParser = bodyParser.urlencoded({extended: false});
 app.use(express.json());
 
-require("dotenv").config()
+require("dotenv").config();
 dbURL = process.env.URL
 
 
