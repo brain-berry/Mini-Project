@@ -6,7 +6,8 @@ const app = express();
 var urlencodedParser = bodyParser.urlencoded({extended: false});
 app.use(express.json());
 
-dbURL = "mongodb+srv://bensonaugustus7:h3nry321@cluster0.fz8hupi.mongodb.net/faculty";
+require("dotenv").config()
+dbURL = process.env.URL
 
 
 const connectionParams={
